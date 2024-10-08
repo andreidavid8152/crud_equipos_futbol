@@ -11,9 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-         // Register your middleware here
         $middleware->alias([
-            'authMiddleware' => \App\Http\Middleware\AuthMiddleware::class, // Your custom middleware
+            'authMiddleware' => \App\Http\Middleware\AuthMiddleware::class,
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
