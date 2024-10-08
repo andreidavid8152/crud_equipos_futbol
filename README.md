@@ -95,7 +95,11 @@ El proyecto incluye un sistema de autenticación básico que permite a los usuar
 
 ## Base de Datos
 
-El proyecto utiliza migraciones de Laravel para gestionar la base de datos. La tabla `equipos` se crea con los siguientes campos:
+El proyecto utiliza migraciones de Laravel para gestionar la base de datos. Aquí están las tablas principales:
+
+### Tabla `equipos`
+
+La tabla `equipos` se crea con los siguientes campos:
 
 - **id**: Identificador único.
 - **nombre**: Nombre del equipo.
@@ -105,6 +109,16 @@ El proyecto utiliza migraciones de Laravel para gestionar la base de datos. La t
 - **entrenador**: Nombre del entrenador.
 - **liga**: Liga en la que compite el equipo.
 - **timestamps**: Marcas de tiempo para la creación y actualización.
+
+### Tabla `usuarios`
+
+La tabla `usuarios` se utiliza para la autenticación de los usuarios. Se crea con los siguientes campos:
+
+- **id**: Identificador único del usuario.
+- **nombre_usuario**: Nombre de usuario para el login.
+- **password**: Contraseña cifrada.
+- **created_at**: Fecha de creación.
+- **updated_at**: Fecha de actualización.
 
 ## Contribución
 
