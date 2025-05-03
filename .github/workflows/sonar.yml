@@ -38,4 +38,4 @@ jobs:
         env:
           SONAR_TOKEN: sqa_012583deb858c1e2d42daa484391ab07eea19454
           SONAR_HOST_URL: http://localhost:9000
-        run: vendor/bin/phpunit && ./vendor/bin/pint && ./vendor/bin/sonar-scanner
+        run: ./vendor/bin/pest && ./vendor/bin/pint && ./vendor/bin/sonar-scanner
